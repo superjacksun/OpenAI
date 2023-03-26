@@ -3,6 +3,7 @@ import streamlit as st
 import openai
 import time
 
+
 # Get API key from environment variable
 api_key = os.environ["OPENAI_API_KEY"]
 openai.api_key = api_key
@@ -101,3 +102,6 @@ def main():
 # Run the Streamlit app
 if __name__ == "__main__":
     main()
+
+
+    
