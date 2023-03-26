@@ -5,7 +5,7 @@ import time
 
 
 # Get API key from environment variable
-api_key = os.environ["OPENAI_API_KEY"]
+api_key = os.environ.get["OPENAI_API_KEY"]
 openai.api_key = api_key
 # 设置页面配置
 st.set_page_config(page_icon=None, layout="wide", initial_sidebar_state="collapsed")
