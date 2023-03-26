@@ -55,7 +55,7 @@ def generate_response(prompt):
     # Call the OpenAI API to generate a response
     response = openai.Completion.create(
         engine="text-davinci-003", 
-        prompt="According to the latest research in the field of biological sciences, can you explain...", 
+        prompt="You are now a senior health nutritionist. Your job is to help people eat healthier to live longer and healthier lives. Please answer the question as such.", 
         max_tokens=300, 
         n=1, 
         stop=None, 
