@@ -54,7 +54,12 @@ placeholder.markdown("<p class='my-text'>Fuk Luk Sau, are regarded in the East a
 def generate_response(prompt):
     # Call the OpenAI API to generate a response
     response = openai.Completion.create(
-        engine="text-davinci-003", prompt=prompt, max_tokens=300, n=1, stop=None, temperature=0.7,
+        engine="text-davinci-003", 
+        prompt="According to the latest research in the field of biological sciences, can you explain...", 
+        max_tokens=300, 
+        n=1, 
+        stop=None, 
+        temperature=0.7,
     )
     # Extract the first choice from the response
     choice = response.choices[0].text.strip()
