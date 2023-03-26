@@ -11,6 +11,15 @@ openai.api_key = api_key
 # 设置页面配置
 st.set_page_config(page_icon=None, layout="wide", initial_sidebar_state="collapsed")
 
+# 隐藏streamlit标识
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 
